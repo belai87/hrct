@@ -1,0 +1,60 @@
+.culture{
+  margin:300px 0 0;
+
+  @media screen and (max-width: $md) {
+    margin:150px 0 50px;
+  }
+
+  &__wrapper{
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__title{
+    background: linear-gradient(91deg, #2B9CF8 0%, #AF2CDD 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #AF2CDD;
+    display: block;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+
+    @media screen and (max-width: $md) {
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.16px;
+    }
+  }
+
+  &__text{
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    flex: 1;
+    font-weight: 300;
+
+    &:last-child{
+      padding:0 0 0 20px;
+
+      @media screen and (max-width: $md) {
+        padding:0;
+      }
+    }
+
+    p{
+      padding:0 0 20px;
+    }
+  }
+
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 0 0;
+
+    @media screen and (max-width: $md) {
+      flex-flow:column;
+    }
+  }
+}

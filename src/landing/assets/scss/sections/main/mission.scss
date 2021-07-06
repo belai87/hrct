@@ -1,0 +1,68 @@
+.mission{
+  background:#FFF;
+  padding: 100px 0;
+
+  &__wrapper{
+    display: flex;
+
+    @media screen and (max-width: $md) {
+      flex-flow: column;
+    }
+  }
+
+  &__title{
+    background: linear-gradient(93.68deg, #E15D5A 5%, #2B9CF8 17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #AF2CDD;
+    display: block;
+    font-weight: bold;
+
+    @media screen and (max-width: $md) {
+      margin-bottom: 0!important;
+    }
+  }
+
+  &__item{
+    padding:150px 0;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    width: 50%;
+
+    @media screen and (max-width: $md) {
+      width: 100%;
+      padding:45px 0;
+    }
+
+    &_img{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      order:1;
+
+      @media screen and (max-width: $md) {
+        height: 205px;
+        order:2;
+      }
+    }
+
+    p{
+      padding:0 0 20px;
+    }
+
+    &_text{
+      max-width: 480px;
+      width: 100%;
+      padding:150px 50px;
+      order:2;
+      font-weight: 300;
+
+      @media screen and (max-width: $md) {
+        order:1;
+        padding:45px 30px 30px;
+      }
+    }
+
+  }
+}

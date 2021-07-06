@@ -1,0 +1,44 @@
+// Font
+$mainFont          : "HELVETICANEUECYR", sans-serif;
+$secondFont          : "CONSOLA", sans-serif;
+$threeFont          : "SansPro", sans-serif;
+
+// Size width
+$xxl : 1440px;
+$xl : 1280px;
+$lg : 1024px;
+$md : 980px;
+$sm : 767px;
+$custom : 375px;
+$xs : 320px;
+
+
+// Size height
+$w120  :1536px;
+$h120 :764px;
+
+$w150  :1396px;
+$h150 :694px;
+
+$w170  :1280px;
+$h170 :610px;
+
+// PRIMARY COLOR
+$primary-blue         : #2196DB;
+$primary-black        : #232321;
+// GRADIENT COLOR
+$gradient             : linear-gradient(93.55deg, #E05C59 9.7%, #AF2CDD 46.04%, #0AB5FF 87.23%);
+$gradient-alpha       : linear-gradient(93.68deg, #2B9CF8 28.77%, #AF2CDD 70.69%);
+$gradient-middle       : linear-gradient(93.68deg, #AF2CDD 28.77%, #DB5769 70.69%);
+// SECONDARY COLOR
+$secondary-light-gray  : #DFE3E6;
+$secondary-gray        : #AEB9C0;
+// ACCENT COLOR
+$accent-error  :#EB5757;
+$accent-success :#07C66A;
+$accent-info  :#FFD642;
+
+$transition     :all .3s ease;
+
+
+

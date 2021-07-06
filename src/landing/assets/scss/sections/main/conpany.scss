@@ -1,0 +1,41 @@
+.company{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__title{
+    background: linear-gradient(93.55deg, #E05C59 9.7%, #AF2CDD 46.04%, #0AB5FF 87.23%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #AF2CDD;
+    display: block;
+    font-weight: 550;
+    font-size: 35px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.155064px;
+    max-width: 1000px;
+    width: 100%;
+
+    @media screen and (max-width: $md) {
+      max-width: 300px;
+      font-size: 25px;
+      line-height: 120%;
+      display: none;
+    }
+
+    &_mobile{
+      display: none;
+      @media screen and (max-width: $md) {
+        display: block;
+      }
+    }
+  }
+}

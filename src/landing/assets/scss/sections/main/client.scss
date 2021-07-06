@@ -1,0 +1,23 @@
+.client{
+  background:#F5F5F7;
+
+  &__wrapper{
+    padding:100px 0;
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $md) {
+      flex-flow: column;
+    }
+  }
+
+  &__item{
+    @media (max-width: $md) {
+      margin-bottom: 40px;
+    }
+  }
+}

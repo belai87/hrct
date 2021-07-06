@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>HRCT</title>
+
+</head>
+<!-- <svg><use xlink:href="./landing/assets/img/sprite.svg#logo"></use></svg> -->
+<!-- xl 1280 | lg 1024 | md 980 | sm 767 | xs 320 -->
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="logo"><img src="landing/assets/img/header/logo.svg" alt=""></a>
+                <div class="menu">
+                    <nav>
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="/">Главная</a></li>
+                            <li class="menu__item"><a class="menu__link" href="/vacancy.html">Вакансии</a></li>
+                            <li class="menu__item js-anchor" data-anchor="company"><a class="menu__link" href="#">О компании</a></li>
+                            <li class="menu__item"><a class="menu__link" href="/project.html">Наши проекты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__burger js-menu-mobile">
+                    <img class="header__burger-img" src="landing/assets/img/header/burger.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="detail">
+            <div class="container">
+                <ul class="breadcrumb detail__breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="">Главная</a></li>
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="">Вакансии</a></li>
+                    <li class="breadcrumb__item">Разработчик node.js</li>
+                </ul>
+
+                <div class="detail__wrapper">
+                    <div class="detail__item">
+                        <div class="detail__title">Разработчик node.js</div>
+
+                        <div class="detail__props">
+                            <div class="detail__text">Опыт работы: <b>3-5 лет</b></div>
+                            <div class="detail__text">Навыки: <b>JavaScript, Node.js</b></div>
+                        </div>
+
+
+                        <div class="detail__text">В Horeca Technologies требуются опытные фронтенд-разработчики. Вам предстоит заниматься техническими проектами. Мы уделяем огромное внимание скорости работы сервиса как на сервере, так и в браузере, работаем над повышением надежности сервиса, автоматизируем рутинную деятельность разработчиков, SRE и QA.</div>
+
+                        <div class="detail__subtitle">В ваши задачи будут входить:</div>
+
+                        <ul class="detail__list">
+                            <li>написание общих библиотек;</li>
+                            <li>поддержка production- и development-инфраструктуры;</li>
+                            <li>поддержка инфраструктуры автотестов;</li>
+                            <li>работа с системами доставки логов и мониторинга;</li>
+                            <li>работа с системами сборки и доставки кода.</li>
+                        </ul>
+
+                        <div class="detail__subtitle"> Обязательны:</div>
+
+                        <ul class="detail__list">
+                            <li>отличное владение чистым JS;</li>
+                            <li>хорошее знание Node.js;</li>
+                            <li>уверенное знание Unix-систем: скрипты, coreutils, cron;</li>
+                            <li>опыт написания тестов (юнит- или интеграционных).</li>
+                        </ul>
+
+                        <div class="detail__subtitle">Приветствуются:</div>
+
+                        <ul class="detail__list">
+                            <li>знание React, Redux, Rx.js, Flow;</li>
+                            <li>опыт профилирования и оптимизации JS в браузере и на сервере;</li>
+                            <li>глубокое знание webpack;</li>
+                            <li>опыт работы с CI/CD-системами;</li>
+                            <li>опыт работы с контейнерами (Docker/LXC);</li>
+                            <li>знание Python или Java на базовом уровне.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="detail__title">Расскажите нам о себе</div>
+                <div class="detail__form-title">Резюме</div>
+                <form action="">
+                    <fieldset class="detail__form">
+
+                        <label class="detail__control detail__label_flex" for="FILE">
+                            <div class="form__file">Загрузить</div>
+                            <input name="FILE" id="FILE" type="file" class="form__file_hide">
+                            <span class="form__file-text">Один файл размером до 5МБ</span>
+                        </label>
+
+                        <div class="form__control">
+                            <label class="form__label" for="NAME_DETAIL">
+                                <input class="form__text" name="NAME" id="NAME_DETAIL" type="text" placeholder="Имя">
+                            </label>
+                        </div>
+
+                        <div class="form__control">
+                            <label class="form__label" for="LASTNAME_DETAIL">
+                                <input class="form__text" name="LASTNAME" id="LASTNAME_DETAIL" type="text" placeholder="Фамилия">
+                            </label>
+                        </div>
+
+                        <div class="form__control">
+                            <label class="form__label" for="PHONE_DETAIL">
+                                <input class="form__text" name="PHONE" id="PHONE_DETAIL" type="tel" placeholder="Телефон">
+                            </label>
+                        </div>
+
+                        <div class="form__control">
+                            <label class="form__label" for="EMAIL_DETAIL">
+                                <input class="form__text" name="EMAIL" id="EMAIL_DETAIL" type="email" placeholder="Электронная почта">
+                            </label>
+                        </div>
+
+                        <textarea class="form__textarea" name="" type="text" placeholder="Сообщение (необязательно)"></textarea>
+
+                        <label class="form__label detail__label_policy" for="POLITIC">
+                            <input class="detail__checkbox" type="checkbox" name="POLITIC" id="POLITIC" checked>
+                            Я соглашаюсь передать свои персональные данные
+                        </label>
+
+                        <button type="submit" class="form__submit">Отправить</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__text">
+                        <div class="footer__title">
+                            Остались вопросы?
+                        </div>
+                        <div class="footer__subtitle">
+                            <p>Если вы хотите узнать больше, свяжитесь с нами.</p>
+                            <p>Мы здесь, чтобы помочь!</p>
+                        </div>
+                    </div>
+                    <div class="footer__form">
+                        <form action="">
+                            <div class="form__control">
+                                <label class="form__label" for="NAME">
+                                    <input class="form__text" type="text" id="NAME" name="NAME" placeholder="Ваше имя" required>
+                                </label>
+                            </div>
+                            <div class="form__control">
+                                <label class="form__label" for="EMAIL">
+                                    <input class="form__text" type="email" id="EMAIL" name="EMAIL" placeholder="Электронная почта" required >
+                                </label>
+                            </div>
+                            <div class="form__control">
+                                <label class="form__label" for="QUESTION">
+                                    <input class="form__text" type="text" id='QUESTION' name="QUESTION" placeholder="Ваш вопрос">
+                                </label>
+                            </div>
+                            <div class="">
+                                <button class="form__submit" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="menu__mobile">
+    <div class="menu__mobile-wrapper">
+        <div class="menu__mobile-header">
+            <div class="logo"><img src="landing/assets/img/header/logo.svg" alt=""></div>
+            <div class="header__burger js-menu-mobile">
+                <img class="header__burger-img" src="landing/assets/img/header/closer.svg" alt="">
+            </div>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item js-anchor" data-anchor="product"><a class="menu__link" href="#">Главная</a></li>
+            <li class="menu__item js-anchor" data-anchor="vacancy"><a class="menu__link" href="#">Вакансии</a></li>
+            <li class="menu__item js-anchor" data-anchor="company"><a class="menu__link" href="#">О компании</a></li>
+            <li class="menu__item"><a class="menu__link" href="/landing/project.html">Наши проекты</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

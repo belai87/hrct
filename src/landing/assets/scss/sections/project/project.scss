@@ -1,0 +1,229 @@
+.project{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_gray{
+    background:#F5F5F7;
+  }
+
+  &__wrapper{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    padding:0 120px;
+
+    @media screen and (max-width: $md){
+      flex-flow:column;
+      padding:0;
+    }
+  }
+
+
+  &__numbers{
+    display: flex;
+    flex-flow: column;
+    margin:0 100px 0 0;
+
+    @media screen and (max-width: $md){
+      display: none;
+    }
+
+    &-item{
+      font-family:$secondFont;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+      color: #9A9A9A;
+      margin-bottom: 50px;
+
+      &_active{
+        color: #0B0B0B;
+      }
+
+    }
+  }
+
+  &__text{
+    min-width: 320px;
+    @media screen and (max-width: $md){
+      padding: 0 40px;
+      margin: 0 0 40px;
+    }
+
+    &-count{
+      font-family:$secondFont;
+      font-size: 144px;
+      line-height: 169px;
+      letter-spacing: 0.2px;
+      opacity: .2;
+
+      @media screen and (max-width: $md){
+        font-size: 80px;
+        line-height: 94px;
+      }
+
+    }
+
+    &-title{
+      font-weight: 550;
+      font-size: 45px;
+      line-height: 120%;
+      letter-spacing: 0.2px;
+      color: #2B2B2B;
+      position: relative;
+      margin-top:-70px;
+
+      @media screen and (max-width: $xxl){
+        font-size: 35px;
+        line-height: 120%;
+      }
+
+      @media screen and (max-width: $w120){
+        font-size: 35px;
+      }
+
+      @media screen and (max-width: $lg){
+        font-size: 20px;
+        line-height: 120%;
+        margin-top:-40px;
+      }
+
+    }
+  }
+
+  &__slider{
+    width: 800px;
+
+    @media screen and (max-width: $xl){
+      width: 500px;
+    }
+
+    @media screen and (max-width: $lg){
+      width: 400px;
+      position: relative;
+      right:-40px;
+    }
+
+    &-wrapper{
+      width: 100%;
+    }
+
+    &-control{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100px;
+      padding: 0 20px;
+      margin: 50px 0 0;
+
+      @media screen and (max-width: $md){
+        width: 50px;
+        padding: 0;
+      }
+    }
+
+    &-arrow{
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    &_next{
+      transform:rotateY(180deg);
+    }
+  }
+
+  &_purple & {
+    &__text{
+      &-count{
+        color:#AF2CDD;
+        opacity: .2;
+      }
+    }
+  }
+
+  &_blue & {
+    &__text{
+      &-count{
+        color:#0AB5FF;
+        opacity: .2;
+      }
+    }
+  }
+
+  &_red & {
+    &__text{
+      &-count{
+        color:#E05C59;
+        opacity: .2;
+      }
+    }
+  }
+}
+
+
+.project__slider_setting .slick-dots{
+  height: 8px;
+  background: #F5F5F7;
+  border-radius: 29px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: $md){
+    width: calc(100% - 80px);
+    margin:0;
+  }
+}
+.project__slider_setting .slick-dots li{
+  flex:1;
+  height: 8px;
+  border-radius: 29px;
+  width: auto;
+  margin:0;
+}
+.project__slider_setting .slick-dots li button{
+  height: 8px;
+  width: 100%;
+  padding: 0;
+  border-radius: 29px;
+  transition: $transition;
+}
+.project__slider_setting .slick-dots li button:before{
+  display: none;
+}
+
+.project_purple .slick-dots li.slick-active button{
+  background: #AF2CDD;
+}
+.project_blue .slick-dots li.slick-active button{
+  background: #0AB5FF;
+}
+.project_red .slick-dots li.slick-active button{
+  background: #E05C59;
+}
+
+
+.project_purple .project__slider_active{
+  svg{
+    fill:#AF2CDD;
+  }
+}
+
+.project_blue .project__slider_active{
+  svg{
+    fill:#0AB5FF;
+  }
+}
+
+.project_red .project__slider_active{
+  svg{
+    fill:#E05C59;
+  }
+}
+

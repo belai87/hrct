@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'HELVETICANEUECYR';
+  src: local('HELVETICANEUECYR-BOLD'), local('Stem-Light'),
+  url('../fonts/HELVETICANEUECYR-BOLD.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HELVETICANEUECYR';
+  src: local('HELVETICANEUECYR-MEDIUM'), local('Stem-Light'),
+  url('../fonts/HELVETICANEUECYR-MEDIUM.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HELVETICANEUECYR';
+  src: local('HELVETICANEUECYR-LIGHT'), local('Stem-Light'),
+  url('../fonts/HELVETICANEUECYR-LIGHT.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HELVETICANEUECYR';
+  src: local('HELVETICANEUECYR-ROMAN'), local('Stem-Light'),
+  url('../fonts/HELVETICANEUECYR-ROMAN.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CONSOLA';
+  src: local('CONSOLA'), local('Stem-Light'),
+  url('../fonts/CONSOLA.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansPro';
+  src: local('BlackerSansPro-Bold'), local('Stem-Light'),
+  url('../fonts/BlackerSansPro-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansPro';
+  src: local('BlackerSansPro-Light'), local('Stem-Light'),
+  url('../fonts/BlackerSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

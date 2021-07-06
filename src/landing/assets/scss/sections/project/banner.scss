@@ -1,0 +1,24 @@
+.banner{
+  height: 320px;
+  background-size: cover;
+
+  &__title{
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: 0.204987px;
+    font-family: "SansPro", sans-serif;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top:5%;
+
+    @media screen and (max-width: $md){
+      font-size: 55px;
+      line-height: 64px;
+      letter-spacing: 0.16px;
+      padding:0 30px;
+    }
+  }
+}

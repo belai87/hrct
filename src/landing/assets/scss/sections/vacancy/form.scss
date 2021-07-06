@@ -1,0 +1,49 @@
+.detail{
+  &__form{
+    display: flex;
+    flex-flow: column;
+    border:none;
+    width: 50%;
+    padding: 0 0 100px;
+
+    @media screen and (max-width: $md){
+      padding: 0 0 50px;
+      width: 100%;
+    }
+
+    &-title{
+      font-size: 20px;
+      letter-spacing: 0.2px;
+      color: #2B2B2B;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__label{
+    position: relative;
+    width: 100%;
+
+    &_flex{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: $md){
+        flex-flow: column;
+        align-items: flex-start;
+      }
+    }
+
+    &_policy{
+      margin-top:30px;
+      font-family: "HELVETICANEUECYR", sans-serif;
+      font-weight: 200;
+      font-size: 16px;
+      color: #646363;
+    }
+  }
+
+  &__checkbox{
+    appearance: auto;
+  }
+}

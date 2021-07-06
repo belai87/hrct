@@ -1,0 +1,38 @@
+.header{
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $md) {
+      padding:10px 0;
+    }
+  }
+
+  &__burger{
+    width: 32px;
+    height: 32px;
+    display: none;
+
+    @media (max-width: $md) {
+      display: flex;
+      justify-content: flex-end;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &_fixed{
+    position: fixed;
+  }
+
+  &_active{
+    background-color: rgba(0,0,0,.1);
+  }
+
+  &_project{
+    &.header_active{
+      background-color: rgba(0,0,0,.2);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.title{
+
+  &_main{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+    margin-bottom: 75px;
+
+    @media screen and (max-width: $md) {
+      font-size: 25px;
+      line-height: 25px;
+      letter-spacing: 0.16px;
+      margin-bottom: 45px;
+    }
+  }
+
+  &_second{
+    font-weight: 550;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #2A2A2A;
+    margin: 0 0 30px;
+
+    @media screen and (max-width: $md) {
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.16px;
+      margin: 0 0 20px;
+    }
+  }
+}
