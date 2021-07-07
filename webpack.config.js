@@ -61,6 +61,10 @@ module.exports = {
             template: './detail.html',
             filename: 'detail.html',
         }),
+        new HTMLWebpackPlugin({
+            template: './contact.html',
+            filename: 'contact.html',
+        }),
         new CleanWebpackPlugin(), // чистим папку public от js c hash
         new CopyWebpackPlugin({
             patterns: [

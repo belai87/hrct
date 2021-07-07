@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Вакансии HRCT</title>
+
+</head>
+<!-- <svg><use xlink:href="./landing/assets/img/sprite.svg#logo"></use></svg> -->
+<!-- xl 1280 | lg 1024 | md 980 | sm 767 | xs 320 -->
+<body>
+<div class="wrapper wrapper_clear">
+    <header class="header_project header_fixed">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="logo"><img src="landing/assets/img/header/logo_p.svg" alt=""></a>
+                <div class="menu">
+                    <nav>
+                        <ul class="menu__list menu_project">
+                            <li class="menu__item"><a class="menu__link" href="/">Продукты</a></li>
+                            <li class="menu__item"><a class="menu__link" href="/project.html">Проекты</a></li>
+                            <li class="menu__item js-anchor" data-anchor="service"><a class="menu__link" href="#">Компетенции</a></li>
+                            <li class="menu__item"><a class="menu__link" href="/vacancy.html">Вакансии</a></li>
+                            <li class="menu__item"><a class="menu__link menu__link_active" href="/contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__burger js-menu-mobile">
+                    <picture>
+                        <source  media="(max-width:767px)" srcset="landing/assets/img/header/burger_m.svg">
+                        <img class="header__burger-img" src="landing/assets/img/header/burger.svg" alt="menu">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="banner" style="background: url(landing/assets/img/contact/bkg.jpeg);">
+                <div class="container">
+                    <div class="banner__title">
+                        Контакты
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="contact">
+                <div class="contact__map">
+                    <picture>
+                        <source  media="(max-width:767px)" srcset="landing/assets/img/contact/map_m.jpeg">
+                        <img src="landing/assets/img/contact/map.jpeg" alt="map">
+                    </picture>
+
+                </div>
+                <div class="container">
+                    <div class="contact__group">
+                        <div class="vacancy__title culture__title">Адрес</div>
+                        <div class="contact__address">Рочдельская улица, 15с16</div>
+                        <div class="contact__street">
+                            <img src="landing/assets/img/contact/street.jpeg" alt="street">
+                            <img src="landing/assets/img/contact/street.jpeg" alt="street">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="contact__form">
+                <div class="container">
+                    <div class="contact__wrapper">
+                        <div class="contact__text">
+                            <div class="contact__form-title">
+                                Остались вопросы?
+                            </div>
+                            <div class="contact__form-subtitle">
+                                <p>Если вы хотите узнать больше, свяжитесь с нами.</p>
+                                <p>Мы здесь, чтобы помочь!</p>
+                            </div>
+                        </div>
+                        <div class="contact__left">
+                            <form action="">
+                                <div class="form__control">
+                                    <label class="form__label" for="NAME">
+                                        <input class="form__text" type="text" id="NAME" name="NAME" placeholder="Ваше имя" required>
+                                    </label>
+                                </div>
+                                <div class="form__control">
+                                    <label class="form__label" for="EMAIL">
+                                        <input class="form__text" type="email" id="EMAIL" name="EMAIL" placeholder="Электронная почта" required >
+                                    </label>
+                                </div>
+                                <div class="form__control">
+                                    <label class="form__label" for="QUESTION">
+                                        <input class="form__text" type="text" id='QUESTION' name="QUESTION" placeholder="Ваш вопрос">
+                                    </label>
+                                </div>
+                                <div class="">
+                                    <button class="form__submit" type="submit">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer" style="background-image: url(landing/assets/img/footer/contact.jpeg)">
+            <div class="container container_content">
+                <div class="footer__wrapper">
+                    <a class="footer__link" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link" href="#">Пользовательское соглашение</a>
+                    <a class="footer__link" href="#">Согласие на обработку персональных данных</a>
+                    <div class="social">
+                        <a class="footer__link footer__link_social" href="https://www.facebook.com/logsolutions.ru"><img src="landing/assets/img/social/facebook.svg" alt=""></a>
+                        <a class="footer__link footer__link_social" href="https://www.instagram.com/logsolutions.ru/"><img src="landing/assets/img/social/instagram.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="menu__mobile">
+    <div class="menu__mobile-wrapper">
+        <div class="menu__mobile-header">
+            <div class="logo"><img src="landing/assets/img/header/logo.svg" alt=""></div>
+            <div class="header__burger js-menu-mobile">
+                <img class="header__burger-img" src="landing/assets/img/header/closer.svg" alt="">
+            </div>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="/">Продукты</a></li>
+            <li class="menu__item"><a class="menu__link" href="/project.html">Проекты</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Компетенции</a></li>
+            <li class="menu__item"><a class="menu__link" href="/vacancy.html">Вакансии</a></li>
+            <li class="menu__item menu__item_active"><a class="menu__link" href="/contact.html">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -17,15 +17,19 @@
                 <div class="menu">
                     <nav>
                         <ul class="menu__list menu_project">
-                            <li class="menu__item"><a class="menu__link" href="/">Главная</a></li>
-                            <li class="menu__item"><a class="menu__link" href="/">Вакансии</a></li>
-                            <li class="menu__item"><a class="menu__link" href="/">О компании</a></li>
-                            <li class="menu__item"><a class="menu__link" href="/project.html">Наши проекты</a></li>
+                            <li class="menu__item"><a class="menu__link" href="/">Продукты</a></li>
+                            <li class="menu__item"><a class="menu__link" href="/project.html">Проекты</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Компетенции</a></li>
+                            <li class="menu__item"><a class="menu__link menu__link_active" href="/vacancy.html">Вакансии</a></li>
+                            <li class="menu__item"><a class="menu__link" href="/contact.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header__burger js-menu-mobile">
-                    <img class="header__burger-img" src="landing/assets/img/header/burger.svg" alt="">
+                    <picture>
+                        <source  media="(max-width:767px)" srcset="landing/assets/img/header/burger_m.svg">
+                        <img class="header__burger-img" src="landing/assets/img/header/burger.svg" alt="menu">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -46,116 +50,69 @@
             <div class="vacancy">
                 <div class="container">
                     <div class="vacancy__wrapper">
-                        <div class="title__wrapper">
-                            <div class="title_main">Все вакансии</div>
+
+                        <div class="vacancy__group">
+                            <div class="vacancy__title culture__title">Разработка</div>
+
+                            <div class="vacancy__list">
+                                <a href="/detail.html" class="vacancy__item">
+                                    <div class="vacancy__item-title">Программист Битрикс24</div>
+                                    <div class="vacancy__item-prop">Опыт работы: <b>от 1-го года</b></div>
+                                    <div class="vacancy__item-prop">Навыки: <b>bitrix d7, php7.2+</b></div>
+                                </a>
+                                <a href="/detail.html" class="vacancy__item">
+                                    <div class="vacancy__item-title">Программист 1С</div>
+                                    <div class="vacancy__item-prop">Опыт работы: <b>от 3-х лет</b></div>
+                                    <div class="vacancy__item-prop">Навыки: <b>1С УТ, 1С ЗУП</b></div>
+                                </a>
+                            </div>
                         </div>
 
-                        <section>
-                            <div class="tab">
-                                <div class="tab__wrapper">
-                                    <div class="tab__item tab__item_active" data-content="#develop">Разработка</div>
-                                    <div class="tab__item" data-content="#analytic">Аналитика</div>
-                                    <div class="tab__item" data-content="#test">Тестирование</div>
-                                    <div class="tab__item" data-content="#design">Дизайн</div>
-                                    <div class="tab__item" data-content="#integration">Интеграция</div>
-                                </div>
-                            </div>
-                        </section>
+                        <div class="vacancy__group">
+                            <div class="vacancy__title culture__title">Аналитика</div>
 
-                        <section>
-                            <div class="tab__content">
-                                <div id="develop" class="tab__content-item tab__content_active">
-                                    <a href="/detail.html" class="vacancy__item">
-                                        <div class="vacancy__item-title">Разработчик node.js</div>
-                                        <div class="vacancy__item-prop">Опыт работы: <b>3-5 лет</b></div>
-                                        <div class="vacancy__item-prop">Навыки: <b>JavaScript, Node.js</b></div>
-                                    </a>
-                                    <a href="/detail.html" class="vacancy__item">
-                                        <div class="vacancy__item-title">Разработчик node.js</div>
-                                        <div class="vacancy__item-prop">Опыт работы: <b>3-5 лет</b></div>
-                                        <div class="vacancy__item-prop">Навыки: <b>JavaScript, Node.js</b></div>
-                                    </a>
-                                    <a href="/detail.html" class="vacancy__item">
-                                        <div class="vacancy__item-title">Разработчик node.js</div>
-                                        <div class="vacancy__item-prop">Опыт работы: <b>3-5 лет</b></div>
-                                        <div class="vacancy__item-prop">Навыки: <b>JavaScript, Node.js</b></div>
-                                    </a>
-                                    <a href="/detail.html" class="vacancy__item">
-                                        <div class="vacancy__item-title">Разработчик node.js</div>
-                                        <div class="vacancy__item-prop">Опыт работы: <b>3-5 лет</b></div>
-                                        <div class="vacancy__item-prop">Навыки: <b>JavaScript, Node.js</b></div>
-                                    </a>
-                                </div>
-                                <div id="analytic" class="tab__content-item">
-                                    <a href="/detail.html" class="vacancy__item">
-                                        <div class="vacancy__item-title">Разработчик node.js</div>
-                                        <div class="vacancy__item-prop">Опыт работы: <b>3-5 лет</b></div>
-                                        <div class="vacancy__item-prop">Навыки: <b>JavaScript, Node.js</b></div>
-                                    </a>
-                                </div>
-                                <div id="test" class="tab__content-item">
-                                    <div class="tab__content-empty">На данное направление вакансий пока нет</div>
-                                </div>
-                                <div id="design" class="tab__content-item">
-                                    <a href="/detail.html" class="vacancy__item">
-                                        <div class="vacancy__item-title">Разработчик node.js</div>
-                                        <div class="vacancy__item-prop">Опыт работы: <b>3-5 лет</b></div>
-                                        <div class="vacancy__item-prop">Навыки: <b>JavaScript, Node.js</b></div>
-                                    </a>
-                                    <a href="/detail.html" class="vacancy__item">
-                                        <div class="vacancy__item-title">Разработчик node.js</div>
-                                        <div class="vacancy__item-prop">Опыт работы: <b>3-5 лет</b></div>
-                                        <div class="vacancy__item-prop">Навыки: <b>JavaScript, Node.js</b></div>
-                                    </a>
-                                </div>
-                                <div id="integration" class="tab__content-item">
-                                    <a href="/detail.html" class="vacancy__item">
-                                        <div class="vacancy__item-title">Разработчик node.js</div>
-                                        <div class="vacancy__item-prop">Опыт работы: <b>3-5 лет</b></div>
-                                        <div class="vacancy__item-prop">Навыки: <b>JavaScript, Node.js</b></div>
-                                    </a>
-                                </div>
+                            <div class="vacancy__list">
+                                <a href="/detail.html" class="vacancy__item">
+                                    <div class="vacancy__item-title">Руководитель продуктовой аналитики</div>
+                                    <div class="vacancy__item-prop">Опыт работы: <b>от 3-х лет</b></div>
+                                    <div class="vacancy__item-prop">Проработка и управление продуктовыми метриками по всем продуктам. Построение воронок AAARRR. Синхронизация действий по всем бизнес-юнитам Холдинга</div>
+                                </a>
+
+                                <a href="/detail.html" class="vacancy__item">
+                                    <div class="vacancy__item-title">Chief Product Officer</div>
+                                    <div class="vacancy__item-prop">Опыт работы: <b>от 3-х лет</b></div>
+                                    <div class="vacancy__item-prop">Проработка стратегии. Синхронизация продуктов по всем бизнес-юнитам Холдинга. Построение продуктового процесса разработки по SCRUM. </div>
+                                </a>
+
+                                <a href="/detail.html" class="vacancy__item">
+                                    <div class="vacancy__item-title">Аналитик</div>
+                                    <div class="vacancy__item-prop">Опыт работы: <b>от 1-го года</b></div>
+                                    <div class="vacancy__item-prop">Навыки: <b>Google Analytics, Яндекс.Метрика</b></div>
+                                </a>
+
+                                <a href="/detail.html" class="vacancy__item">
+                                    <div class="vacancy__item-title">Системный аналитик</div>
+                                    <div class="vacancy__item-prop">Опыт работы: <b>от 1-го года</b></div>
+                                    <div class="vacancy__item-prop">Навыки: <b>XML, XSLT, XSD, json, UML/IDEF/BPMN</b></div>
+                                </a>
                             </div>
-                        </section>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer">
-            <div class="container">
+        <div class="footer" style="background-image: url(landing/assets/img/footer/vacancy.jpeg)">
+            <div class="container container_content">
                 <div class="footer__wrapper">
-                    <div class="footer__text">
-                        <div class="footer__title">
-                            Остались вопросы?
-                        </div>
-                        <div class="footer__subtitle">
-                            <p>Если вы хотите узнать больше, свяжитесь с нами.</p>
-                            <p>Мы здесь, чтобы помочь!</p>
-                        </div>
-                    </div>
-                    <div class="footer__form">
-                        <form action="">
-                            <div class="form__control">
-                                <label class="form__label" for="NAME">
-                                    <input class="form__text" type="text" id="NAME" name="NAME" placeholder="Ваше имя" required>
-                                </label>
-                            </div>
-                            <div class="form__control">
-                                <label class="form__label" for="EMAIL">
-                                    <input class="form__text" type="email" id="EMAIL" name="EMAIL" placeholder="Электронная почта" required >
-                                </label>
-                            </div>
-                            <div class="form__control">
-                                <label class="form__label" for="QUESTION">
-                                    <input class="form__text" type="text" id='QUESTION' name="QUESTION" placeholder="Ваш вопрос">
-                                </label>
-                            </div>
-                            <div class="">
-                                <button class="form__submit" type="submit">Отправить</button>
-                            </div>
-                        </form>
+                    <a class="footer__link" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link" href="#">Пользовательское соглашение</a>
+                    <a class="footer__link" href="#">Согласие на обработку персональных данных</a>
+                    <div class="social">
+                        <a class="footer__link footer__link_social" href="https://www.facebook.com/logsolutions.ru"><img src="landing/assets/img/social/facebook.svg" alt=""></a>
+                        <a class="footer__link footer__link_social" href="https://www.instagram.com/logsolutions.ru/"><img src="landing/assets/img/social/instagram.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -171,10 +128,11 @@
             </div>
         </div>
         <ul class="menu__list">
-            <li class="menu__item js-anchor" data-anchor="product"><a class="menu__link" href="#">Главная</a></li>
-            <li class="menu__item js-anchor" data-anchor="vacancy"><a class="menu__link" href="#">Вакансии</a></li>
-            <li class="menu__item js-anchor" data-anchor="company"><a class="menu__link" href="#">О компании</a></li>
-            <li class="menu__item"><a class="menu__link" href="/project.html">Наши проекты</a></li>
+            <li class="menu__item"><a class="menu__link" href="/">Продукты</a></li>
+            <li class="menu__item"><a class="menu__link" href="/project.html">Проекты</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Компетенции</a></li>
+            <li class="menu__item menu__item_active"><a class="menu__link" href="/vacancy.html">Вакансии</a></li>
+            <li class="menu__item"><a class="menu__link" href="/contact.html">Контакты</a></li>
         </ul>
     </div>
 </div>

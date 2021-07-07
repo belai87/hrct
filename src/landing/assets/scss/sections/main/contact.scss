@@ -1,0 +1,88 @@
+.contact{
+  &__wrapper{
+    padding:50px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__map{
+    img{
+      width: 100%;
+    }
+  }
+
+  &__street{
+    display: flex;
+    justify-content: center;
+    margin-top:70px;
+
+    @media screen and (max-width: $md) {
+      flex-flow: column;
+      margin:35px -40px 0 -40px;
+    }
+  }
+
+  &__group{
+    padding:50px 0;
+  }
+
+  &__address{
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    @media screen and (max-width: $md) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+  }
+
+  &__form{
+    background: #F5F5F7;
+
+    @media screen and (max-width: $md) {
+      padding: 0;
+    }
+
+    &-title{
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0.2px;
+      margin:0 0 40px;
+
+      @media screen and (max-width: $md) {
+        font-size: 25px;
+        line-height: 25px;
+      }
+    }
+
+    &-subtitle{
+      font-size: 18px;
+      line-height: 115%;
+      letter-spacing: 0.2px;
+
+      @media screen and (max-width: $md) {
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0.16px;
+      }
+
+      p{
+        padding:0 0 30px;
+      }
+    }
+  }
+
+
+
+  &__text,
+  &__left{
+    width: 50%;
+
+    @media screen and (max-width: $md) {
+      width: 100%;
+    }
+  }
+}

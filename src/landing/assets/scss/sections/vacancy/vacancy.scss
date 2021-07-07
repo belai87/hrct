@@ -1,8 +1,36 @@
 .vacancy{
   &__wrapper{
-    padding:140px 0;
+    padding:70px 0;
     @media screen and (max-width: $md){
       padding:50px 0;
+    }
+  }
+
+  &__title{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    margin-bottom: 35px;
+
+    @media screen and (max-width: $md){
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+
+  &__group{
+    margin-bottom: 70px;
+  }
+
+  &__list{
+    margin:0 -20px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+    @media screen and (max-width: $md){
+      margin:0;
     }
   }
 
@@ -12,10 +40,12 @@
     padding:40px;
     width: calc(50% - 20px);
     margin:0 10px 20px 10px;
+    display: block;
 
     @media screen and (max-width: $md){
       width: 100%;
       margin:0 0 20px;
+      padding:25px;
     }
 
     &:hover{
@@ -31,13 +61,22 @@
       margin-bottom: 40px;
     }
 
+    @media screen and (max-width: $md){
+      font-size: 20px;
+      line-height: 20px;
+    }
+
     &-prop{
-      font-weight: 300;
+      font-weight: 200;
       font-size: 18px;
       line-height: 120%;
       letter-spacing: 0.2px;
       color: #2B2B2B;
       margin-bottom: 10px;
+
+      @media screen and (max-width: $md){
+        font-size: 16px;
+      }
     }
   }
 }
